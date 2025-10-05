@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>51 — Antimony (Sb)</title>
+<style>
+:root{--accent:#1f78b4;--muted:#666;}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;padding:20px;background:#fafafa;color:#111;}
+.container{max-width:900px;margin:0 auto;background:white;padding:20px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.06);}
+.header{display:flex;gap:20px;align-items:center;flex-wrap:wrap;}
+.imgwrap{flex:0 0 240px;max-width:100%;}
+img.element-img{width:100%;height:auto;border-radius:8px;border:1px solid #eee;}
+.h1{margin:0;font-size:1.8rem;}
+
+.meta{color:var(--muted);font-size:0.95rem;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;margin-top:14px;}
+.card{background:#fff;padding:8px;border-radius:8px;border:1px solid #f0f0f0;}
+
+.small{font-size:0.9rem;color:var(--muted);}
+.footer{margin-top:18px;color:var(--muted);font-size:0.9rem;text-align:center;}
+a{color:var(--accent);text-decoration:none;}
+
+.lang-btn{
+  background:var(--accent);
+  color:white;
+  border:none;
+  padding:6px 12px;
+  border-radius:6px;
+  cursor:pointer;
+  margin-top:20px;
+}
+
+/* ✅ Responsive for phones */
+@media (max-width:600px){
+  body{padding:10px;}
+  .header{flex-direction:column;align-items:flex-start;}
+
+  .imgwrap{flex:unset;width:100%;text-align:center;}
+  .h1{font-size:1.5rem;}
+  .meta{font-size:0.85rem;}
+  .grid{grid-template-columns:1fr 1fr;}
+}
+</style>
+
+<script>
+function toggleLang(){
+  const html = document.documentElement;
+  const btn = document.getElementById('langBtn');
+  if(html.lang === 'ar'){
+    html.lang = 'en';
+    html.dir = 'ltr';
+    btn.innerText = 'العربية';
+    document.querySelectorAll('[data-ar]').forEach(el => {
+      el.innerText = el.getAttribute('data-en');
+    });
+  } else {
+    html.lang = 'ar';
+    html.dir = 'rtl';
+    btn.innerText = 'English';
+    document.querySelectorAll('[data-ar]').forEach(el => {
+      el.innerText = el.getAttribute('data-ar');
+    });
+  }
+}
+</script>
+
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="imgwrap">
+      <img class="element-img" src="../images/051_Antimony.jpg" alt="Antimony image">
+    </div>
+    <div>
+      <h1 class="h1" data-ar="Antimony (Sb)" data-en="Antimony (Sb)">Antimony (Sb)</h1>
+      <div class="meta" data-ar="العدد الذري: 51 • الكتلة الذرية: 121.7601" data-en="Atomic number: 51 • Atomic mass: 121.7601"></div>
+      <div class="meta" data-ar="الفئة: metalloid • الحالة عند STP: Solid" data-en="Category: metalloid • Phase at STP: Solid"></div>
+      <div class="meta" data-ar="الموقع: الدورة 5 / المجموعة 15" data-en="Position: period 5 / group 15"></div>
+      <div style="margin-top:8px" class="small" data-ar="التوزيع الإلكتروني: 1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p3" data-en="Electron configuration: 1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p3"></div>
+    </div>
+  </div>
+
+  <div style="margin-top:18px">
+    <h3 data-ar="ملخص" data-en="Summary">ملخص</h3>
+    <p data-ar="Antimony هو عنصر كيميائي مع رمز SB (من اللاتينية: Stibium) والرقم الذري 51. ميتولويد رمادي لامع ، وجد في الطبيعة بشكل رئيسي كستيبنيت المعادن الكبريتيد (SB2S3).كانت مركبات الأنتيمون معروفة منذ العصور القديمة واستخدمت في مستحضرات التجميل.كان معروفًا أيضًا أنتيمونات المعادن ، ولكن تم تحديدها عن طريق الخطأ على أنها رائدة عند اكتشافها." data-en="Antimony is a chemical element with symbol Sb (from Latin:stibium) and atomic number 51. A lustrous gray metalloid, it is found in nature mainly as the sulfide mineral stibnite (Sb2S3). Antimony compounds have been known since ancient times and were used for cosmetics; metallic antimony was also known, but it was erroneously identified as lead upon its discovery.">Antimony هو عنصر كيميائي مع رمز SB (من اللاتينية: Stibium) والرقم الذري 51. ميتولويد رمادي لامع ، وجد في الطبيعة بشكل رئيسي كستيبنيت المعادن الكبريتيد (SB2S3).كانت مركبات الأنتيمون معروفة منذ العصور القديمة واستخدمت في مستحضرات التجميل.كان معروفًا أيضًا أنتيمونات المعادن ، ولكن تم تحديدها عن طريق الخطأ على أنها رائدة عند اكتشافها.</p>
+  </div>
+
+  <div class="grid" style="margin-top:12px">
+    <div class="card"><div class="small" data-ar="المظهر" data-en="Appearance">المظهر</div><div>silvery lustrous gray</div></div>
+    <div class="card"><div class="small" data-ar="المكتشف" data-en="Discovered by">المكتشف</div><div>unknown, before 3000 BC</div></div>
+    <div class="card"><div class="small" data-ar="نقطة الانصهار (كلفن)" data-en="Melting point (K)">نقطة الانصهار (كلفن)</div><div>903.78</div></div>
+    <div class="card"><div class="small" data-ar="نقطة الغليان (كلفن)" data-en="Boiling point (K)">نقطة الغليان (كلفن)</div><div>1908</div></div>
+  </div>
+
+  <div class="footer" data-ar="تم إنشاء الصفحة من مصادر بيانات عامة." data-en="Page generated from public data sources.">
+    تم إنشاء الصفحة من مصادر بيانات عامة.
+  </div>
+
+  <!-- ✅ Language toggle button at the bottom -->
+  <div style="text-align:center;">
+    <button id="langBtn" class="lang-btn" onclick="toggleLang()">English</button>
+  </div>
+</div>
+</body>
+</html>

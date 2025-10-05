@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>90 — Thorium (Th)</title>
+<style>
+:root{--accent:#1f78b4;--muted:#666;}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;padding:20px;background:#fafafa;color:#111;}
+.container{max-width:900px;margin:0 auto;background:white;padding:20px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.06);}
+.header{display:flex;gap:20px;align-items:center;flex-wrap:wrap;}
+.imgwrap{flex:0 0 240px;max-width:100%;}
+img.element-img{width:100%;height:auto;border-radius:8px;border:1px solid #eee;}
+.h1{margin:0;font-size:1.8rem;}
+
+.meta{color:var(--muted);font-size:0.95rem;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;margin-top:14px;}
+.card{background:#fff;padding:8px;border-radius:8px;border:1px solid #f0f0f0;}
+
+.small{font-size:0.9rem;color:var(--muted);}
+.footer{margin-top:18px;color:var(--muted);font-size:0.9rem;text-align:center;}
+a{color:var(--accent);text-decoration:none;}
+
+.lang-btn{
+  background:var(--accent);
+  color:white;
+  border:none;
+  padding:6px 12px;
+  border-radius:6px;
+  cursor:pointer;
+  margin-top:20px;
+}
+
+/* ✅ Responsive for phones */
+@media (max-width:600px){
+  body{padding:10px;}
+  .header{flex-direction:column;align-items:flex-start;}
+
+  .imgwrap{flex:unset;width:100%;text-align:center;}
+  .h1{font-size:1.5rem;}
+  .meta{font-size:0.85rem;}
+  .grid{grid-template-columns:1fr 1fr;}
+}
+</style>
+
+<script>
+function toggleLang(){
+  const html = document.documentElement;
+  const btn = document.getElementById('langBtn');
+  if(html.lang === 'ar'){
+    html.lang = 'en';
+    html.dir = 'ltr';
+    btn.innerText = 'العربية';
+    document.querySelectorAll('[data-ar]').forEach(el => {
+      el.innerText = el.getAttribute('data-en');
+    });
+  } else {
+    html.lang = 'ar';
+    html.dir = 'rtl';
+    btn.innerText = 'English';
+    document.querySelectorAll('[data-ar]').forEach(el => {
+      el.innerText = el.getAttribute('data-ar');
+    });
+  }
+}
+</script>
+
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="imgwrap">
+      <img class="element-img" src="../images/090_Thorium.jpg" alt="Thorium image">
+    </div>
+    <div>
+      <h1 class="h1" data-ar="Thorium (Th)" data-en="Thorium (Th)">Thorium (Th)</h1>
+      <div class="meta" data-ar="العدد الذري: 90 • الكتلة الذرية: 232.03774" data-en="Atomic number: 90 • Atomic mass: 232.03774"></div>
+      <div class="meta" data-ar="الفئة: actinide • الحالة عند STP: Solid" data-en="Category: actinide • Phase at STP: Solid"></div>
+      <div class="meta" data-ar="الموقع: الدورة 10 / المجموعة 4" data-en="Position: period 10 / group 4"></div>
+      <div style="margin-top:8px" class="small" data-ar="التوزيع الإلكتروني: 1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 6d2" data-en="Electron configuration: 1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 6d2"></div>
+    </div>
+  </div>
+
+  <div style="margin-top:18px">
+    <h3 data-ar="ملخص" data-en="Summary">ملخص</h3>
+    <p data-ar="الثوريوم هو عنصر كيميائي له الرمز والرقم الذري 90. معدن أكتينيد مشع ، يعتبر الثوريوم أحد العناصر الإشعاعية بشكل كبير لا يزال يحدث بشكل طبيعي بكميات كبيرة كعنصر أساسي (والآخر هو اليورانيوم).تم اكتشافه في عام 1828 من قبل القس النرويجي وعازف المعادن الهواة مورتن هران إسمارك وتحديده من قبل الكيميائي السويدي ياكوب بيرزيليوس ، الذي أطلق عليه اسم ثور ، إله الرعد." data-en="Thorium is a chemical element with symbol Th and atomic number 90. A radioactive actinide metal, thorium is one of only two significantly radioactive elements that still occur naturally in large quantities as a primordial element (the other being uranium). It was discovered in 1828 by the Norwegian Reverend and amateur mineralogist Morten Thrane Esmark and identified by the Swedish chemist Jöns Jakob Berzelius, who named it after Thor, the Norse god of thunder.">الثوريوم هو عنصر كيميائي له الرمز والرقم الذري 90. معدن أكتينيد مشع ، يعتبر الثوريوم أحد العناصر الإشعاعية بشكل كبير لا يزال يحدث بشكل طبيعي بكميات كبيرة كعنصر أساسي (والآخر هو اليورانيوم).تم اكتشافه في عام 1828 من قبل القس النرويجي وعازف المعادن الهواة مورتن هران إسمارك وتحديده من قبل الكيميائي السويدي ياكوب بيرزيليوس ، الذي أطلق عليه اسم ثور ، إله الرعد.</p>
+  </div>
+
+  <div class="grid" style="margin-top:12px">
+    <div class="card"><div class="small" data-ar="المظهر" data-en="Appearance">المظهر</div><div>silvery, often with black tarnish</div></div>
+    <div class="card"><div class="small" data-ar="المكتشف" data-en="Discovered by">المكتشف</div><div>Jöns Jakob Berzelius</div></div>
+    <div class="card"><div class="small" data-ar="نقطة الانصهار (كلفن)" data-en="Melting point (K)">نقطة الانصهار (كلفن)</div><div>2023</div></div>
+    <div class="card"><div class="small" data-ar="نقطة الغليان (كلفن)" data-en="Boiling point (K)">نقطة الغليان (كلفن)</div><div>5061</div></div>
+  </div>
+
+  <div class="footer" data-ar="تم إنشاء الصفحة من مصادر بيانات عامة." data-en="Page generated from public data sources.">
+    تم إنشاء الصفحة من مصادر بيانات عامة.
+  </div>
+
+  <!-- ✅ Language toggle button at the bottom -->
+  <div style="text-align:center;">
+    <button id="langBtn" class="lang-btn" onclick="toggleLang()">English</button>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>47 — Silver (Ag)</title>
+<style>
+:root{--accent:#1f78b4;--muted:#666;}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;padding:20px;background:#fafafa;color:#111;}
+.container{max-width:900px;margin:0 auto;background:white;padding:20px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.06);}
+.header{display:flex;gap:20px;align-items:center;flex-wrap:wrap;}
+.imgwrap{flex:0 0 240px;max-width:100%;}
+img.element-img{width:100%;height:auto;border-radius:8px;border:1px solid #eee;}
+.h1{margin:0;font-size:1.8rem;}
+
+.meta{color:var(--muted);font-size:0.95rem;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;margin-top:14px;}
+.card{background:#fff;padding:8px;border-radius:8px;border:1px solid #f0f0f0;}
+
+.small{font-size:0.9rem;color:var(--muted);}
+.footer{margin-top:18px;color:var(--muted);font-size:0.9rem;text-align:center;}
+a{color:var(--accent);text-decoration:none;}
+
+.lang-btn{
+  background:var(--accent);
+  color:white;
+  border:none;
+  padding:6px 12px;
+  border-radius:6px;
+  cursor:pointer;
+  margin-top:20px;
+}
+
+/* ✅ Responsive for phones */
+@media (max-width:600px){
+  body{padding:10px;}
+  .header{flex-direction:column;align-items:flex-start;}
+
+  .imgwrap{flex:unset;width:100%;text-align:center;}
+  .h1{font-size:1.5rem;}
+  .meta{font-size:0.85rem;}
+  .grid{grid-template-columns:1fr 1fr;}
+}
+</style>
+
+<script>
+function toggleLang(){
+  const html = document.documentElement;
+  const btn = document.getElementById('langBtn');
+  if(html.lang === 'ar'){
+    html.lang = 'en';
+    html.dir = 'ltr';
+    btn.innerText = 'العربية';
+    document.querySelectorAll('[data-ar]').forEach(el => {
+      el.innerText = el.getAttribute('data-en');
+    });
+  } else {
+    html.lang = 'ar';
+    html.dir = 'rtl';
+    btn.innerText = 'English';
+    document.querySelectorAll('[data-ar]').forEach(el => {
+      el.innerText = el.getAttribute('data-ar');
+    });
+  }
+}
+</script>
+
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="imgwrap">
+      <img class="element-img" src="../images/047_Silver.jpg" alt="Silver image">
+    </div>
+    <div>
+      <h1 class="h1" data-ar="Silver (Ag)" data-en="Silver (Ag)">Silver (Ag)</h1>
+      <div class="meta" data-ar="العدد الذري: 47 • الكتلة الذرية: 107.86822" data-en="Atomic number: 47 • Atomic mass: 107.86822"></div>
+      <div class="meta" data-ar="الفئة: transition metal • الحالة عند STP: Solid" data-en="Category: transition metal • Phase at STP: Solid"></div>
+      <div class="meta" data-ar="الموقع: الدورة 5 / المجموعة 11" data-en="Position: period 5 / group 11"></div>
+      <div style="margin-top:8px" class="small" data-ar="التوزيع الإلكتروني: 1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s1 4d10" data-en="Electron configuration: 1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s1 4d10"></div>
+    </div>
+  </div>
+
+  <div style="margin-top:18px">
+    <h3 data-ar="ملخص" data-en="Summary">ملخص</h3>
+    <p data-ar="الفضة هي عنصر كيميائي مع رمز Ag (اليونانية: άργυρος árguros ، اللاتينية: الأرجنتيوم ، سواء من الجذر الهندي الأوروبي *h₂erǵ- لأعلى "رمادي" أو "مشرق") والرقم الذري 47.يحدث المعدن بشكل طبيعي في شكله الخالص المجاني (الفضة الأصلية) ، كسبائك مع الذهب والمعادن الأخرى ، وفي المعادن مثل الأرجنتيت والكلوراريت." data-en="Silver is a chemical element with symbol Ag (Greek:άργυρος árguros, Latin:argentum, both from the Indo-European root *h₂erǵ- for "grey" or "shining") and atomic number 47. A soft, white, lustrous transition metal, it possesses the highest electrical conductivity, thermal conductivity and reflectivity of any metal. The metal occurs naturally in its pure, free form (native silver), as an alloy with gold and other metals, and in minerals such as argentite and chlorargyrite.">الفضة هي عنصر كيميائي مع رمز Ag (اليونانية: άργυρος árguros ، اللاتينية: الأرجنتيوم ، سواء من الجذر الهندي الأوروبي *h₂erǵ- لأعلى "رمادي" أو "مشرق") والرقم الذري 47.يحدث المعدن بشكل طبيعي في شكله الخالص المجاني (الفضة الأصلية) ، كسبائك مع الذهب والمعادن الأخرى ، وفي المعادن مثل الأرجنتيت والكلوراريت.</p>
+  </div>
+
+  <div class="grid" style="margin-top:12px">
+    <div class="card"><div class="small" data-ar="المظهر" data-en="Appearance">المظهر</div><div>lustrous white metal</div></div>
+    <div class="card"><div class="small" data-ar="المكتشف" data-en="Discovered by">المكتشف</div><div>unknown, before 5000 BC</div></div>
+    <div class="card"><div class="small" data-ar="نقطة الانصهار (كلفن)" data-en="Melting point (K)">نقطة الانصهار (كلفن)</div><div>1234.93</div></div>
+    <div class="card"><div class="small" data-ar="نقطة الغليان (كلفن)" data-en="Boiling point (K)">نقطة الغليان (كلفن)</div><div>2435</div></div>
+  </div>
+
+  <div class="footer" data-ar="تم إنشاء الصفحة من مصادر بيانات عامة." data-en="Page generated from public data sources.">
+    تم إنشاء الصفحة من مصادر بيانات عامة.
+  </div>
+
+  <!-- ✅ Language toggle button at the bottom -->
+  <div style="text-align:center;">
+    <button id="langBtn" class="lang-btn" onclick="toggleLang()">English</button>
+  </div>
+</div>
+</body>
+</html>

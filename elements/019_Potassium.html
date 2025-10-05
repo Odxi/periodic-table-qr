@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>19 — Potassium (K)</title>
+<style>
+:root{--accent:#1f78b4;--muted:#666;}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;padding:20px;background:#fafafa;color:#111;}
+.container{max-width:900px;margin:0 auto;background:white;padding:20px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.06);}
+.header{display:flex;gap:20px;align-items:center;flex-wrap:wrap;}
+.imgwrap{flex:0 0 240px;max-width:100%;}
+img.element-img{width:100%;height:auto;border-radius:8px;border:1px solid #eee;}
+.h1{margin:0;font-size:1.8rem;}
+
+.meta{color:var(--muted);font-size:0.95rem;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;margin-top:14px;}
+.card{background:#fff;padding:8px;border-radius:8px;border:1px solid #f0f0f0;}
+
+.small{font-size:0.9rem;color:var(--muted);}
+.footer{margin-top:18px;color:var(--muted);font-size:0.9rem;text-align:center;}
+a{color:var(--accent);text-decoration:none;}
+
+.lang-btn{
+  background:var(--accent);
+  color:white;
+  border:none;
+  padding:6px 12px;
+  border-radius:6px;
+  cursor:pointer;
+  margin-top:20px;
+}
+
+/* ✅ Responsive for phones */
+@media (max-width:600px){
+  body{padding:10px;}
+  .header{flex-direction:column;align-items:flex-start;}
+
+  .imgwrap{flex:unset;width:100%;text-align:center;}
+  .h1{font-size:1.5rem;}
+  .meta{font-size:0.85rem;}
+  .grid{grid-template-columns:1fr 1fr;}
+}
+</style>
+
+<script>
+function toggleLang(){
+  const html = document.documentElement;
+  const btn = document.getElementById('langBtn');
+  if(html.lang === 'ar'){
+    html.lang = 'en';
+    html.dir = 'ltr';
+    btn.innerText = 'العربية';
+    document.querySelectorAll('[data-ar]').forEach(el => {
+      el.innerText = el.getAttribute('data-en');
+    });
+  } else {
+    html.lang = 'ar';
+    html.dir = 'rtl';
+    btn.innerText = 'English';
+    document.querySelectorAll('[data-ar]').forEach(el => {
+      el.innerText = el.getAttribute('data-ar');
+    });
+  }
+}
+</script>
+
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="imgwrap">
+      <img class="element-img" src="../images/019_Potassium.jpg" alt="Potassium image">
+    </div>
+    <div>
+      <h1 class="h1" data-ar="Potassium (K)" data-en="Potassium (K)">Potassium (K)</h1>
+      <div class="meta" data-ar="العدد الذري: 19 • الكتلة الذرية: 39.09831" data-en="Atomic number: 19 • Atomic mass: 39.09831">العدد الذري: 19 • الكتلة الذرية: 39.09831</div>
+      <div class="meta" data-ar="الفئة: alkali metal • الحالة عند STP: Solid" data-en="Category: alkali metal • Phase at STP: Solid">الفئة: alkali metal • الحالة عند STP: Solid</div>
+      <div class="meta" data-ar="الموقع: الدورة 4 / المجموعة 1" data-en="Position: period 4 / group 1">الموقع: الدورة 4 / المجموعة 1</div>
+      <div style="margin-top:8px" class="small" data-ar="التوزيع الإلكتروني: 1s2 2s2 2p6 3s2 3p6 4s1" data-en="Electron configuration: 1s2 2s2 2p6 3s2 3p6 4s1">التوزيع الإلكتروني: 1s2 2s2 2p6 3s2 3p6 4s1</div>
+    </div>
+  </div>
+
+  <div style="margin-top:18px">
+    <h3 data-ar="ملخص" data-en="Summary">ملخص</h3>
+    <p data-ar="البوتاسيوم هو عنصر كيميائي مع رمز K (مشتق من اللاتين الجدد ، الكاليوم) والرقم الذري 19. تم عزله أولاً من البوتاس ، رماد النباتات ، التي يستمد منها اسمها.في الجدول الدوري ، يعد البوتاسيوم أحد العناصر السبعة في العمود (المجموعة) 1 (المعادن القلوية): جميعهم لديهم إلكترون تكافؤ واحد في قشرة الإلكترون الخارجية ، والتي يستسلمونها بسهولة لإنشاء ذرة مع شحنة إيجابية - كاتيون ، ويجمعون مع الأذواق لتشكيل أملاح." data-en="Potassium is a chemical element with symbol K (derived from Neo-Latin, kalium) and atomic number 19. It was first isolated from potash, the ashes of plants, from which its name is derived. In the Periodic table, potassium is one of seven elements in column (group) 1 (alkali metals):they all have a single valence electron in their outer electron shell, which they readily give up to create an atom with a positive charge - a cation, and combine with anions to form salts.">البوتاسيوم هو عنصر كيميائي مع رمز K (مشتق من اللاتين الجدد ، الكاليوم) والرقم الذري 19. تم عزله أولاً من البوتاس ، رماد النباتات ، التي يستمد منها اسمها.في الجدول الدوري ، يعد البوتاسيوم أحد العناصر السبعة في العمود (المجموعة) 1 (المعادن القلوية): جميعهم لديهم إلكترون تكافؤ واحد في قشرة الإلكترون الخارجية ، والتي يستسلمونها بسهولة لإنشاء ذرة مع شحنة إيجابية - كاتيون ، ويجمعون مع الأذواق لتشكيل أملاح.</p>
+  </div>
+
+  <div class="grid" style="margin-top:12px">
+    <div class="card"><div class="small" data-ar="المظهر" data-en="Appearance">المظهر</div><div>silvery gray</div></div>
+    <div class="card"><div class="small" data-ar="المكتشف" data-en="Discovered by">المكتشف</div><div>Humphry Davy</div></div>
+    <div class="card"><div class="small" data-ar="نقطة الانصهار (كلفن)" data-en="Melting point (K)">نقطة الانصهار (كلفن)</div><div>336.7</div></div>
+    <div class="card"><div class="small" data-ar="نقطة الغليان (كلفن)" data-en="Boiling point (K)">نقطة الغليان (كلفن)</div><div>1032</div></div>
+  </div>
+
+  <div class="footer" data-ar="تم إنشاء الصفحة من مصادر بيانات عامة." data-en="Page generated from public data sources.">
+    تم إنشاء الصفحة من مصادر بيانات عامة.
+  </div>
+
+  <!-- ✅ Language toggle button at the bottom -->
+  <div style="text-align:center;">
+    <button id="langBtn" class="lang-btn" onclick="toggleLang()">English</button>
+  </div>
+</div>
+</body>
+</html>
