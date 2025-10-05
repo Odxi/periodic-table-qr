@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Periodic Table — Element Pages</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;padding:20px;background:#f6f8fb;color:#111}
+.container{max-width:1100px;margin:0 auto}
+h1{margin-bottom:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin-top:12px}
+.card{display:flex;flex-direction:column;align-items:center;padding:10px;border-radius:10px;background:white;text-decoration:none;color:inherit;border:1px solid #eee;box-shadow:0 2px 8px rgba(0,0,0,0.03)}
+.card .num{font-size:0.85rem;color:#666}
+.card .sym{font-weight:700;font-size:1.2rem;margin-top:6px}
+.card .ename{font-size:0.85rem;color:#333;margin-top:6px;text-align:center}
+.headerbar{display:flex;justify-content:space-between;align-items:center}
+.small{color:#666;font-size:0.95rem}
+.badge{background:#1f78b4;color:white;padding:6px 10px;border-radius:999px}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="headerbar">
+    <div>
+      <h1>Periodic Table — Element Pages</h1>
+      <div class="small">Click an element to open its page. QR PNGs saved in <code>qrcodes/</code>.</div>
+    </div>
+    <div class="badge">Total: 5</div>
+  </div>
+
+  <div class="grid">
+    <a class="card" href="elements/001_Hydrogen.html" title="Hydrogen"><div class="num">1</div><div class="sym">H</div><div class="ename">Hydrogen</div></a><a class="card" href="elements/002_Helium.html" title="Helium"><div class="num">2</div><div class="sym">He</div><div class="ename">Helium</div></a><a class="card" href="elements/003_Lithium.html" title="Lithium"><div class="num">3</div><div class="sym">Li</div><div class="ename">Lithium</div></a><a class="card" href="elements/004_Beryllium.html" title="Beryllium"><div class="num">4</div><div class="sym">Be</div><div class="ename">Beryllium</div></a><a class="card" href="elements/005_Boron.html" title="Boron"><div class="num">5</div><div class="sym">B</div><div class="ename">Boron</div></a>
+  </div>
+</div>
+</body>
+</html>
